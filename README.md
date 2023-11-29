@@ -1,5 +1,5 @@
 # Mini_Project
-Mini Project based on to get the weather condition of specified location.
+Aim: to get the weather condition of specified location.
 
 Visit it at=>
-https://6566d55540969124143efc49--stalwart-unicorn-99a7a7.netlify.app/
+https://dapper-raindrop-cbcb9b.netlify.app/
