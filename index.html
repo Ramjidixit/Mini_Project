@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
     <div class="wrapper">
 
         <h1>Weather App</h1>
 
         <div class="tab-container">
             <p class="tab" data-userWeather>Current Location Weather</p>
+            
             <p class="tab" data-searchWeather>Search Weather</p>
         </div>
 
@@ -38,12 +39,12 @@
                 <button class="btn" type="submit">
                     <img src="./images/search.png"  width="20" height="20" loading="lazy">
                 </button>
-            </form>
+            </form> 
 
             <!--- loading screen container -->
             <div class="sub-container loading-container">
                 <img src="./images/loading.gif" width="150" height="150">
-                <p>Loading</p>
+                <p>Loading...</p>
             </div>
 
             <!-- show weather info -->
@@ -88,17 +89,21 @@
 
                 </div>
 
-
             </div>
-
-
 
         </div>
 
-
     </div>
-
+   
+<div class="popup" id="popup">
+    <div class="popup-content">
+      <img src="./Images/cooltext448145053342590.png" alt="Popup Image">
+    </div>
+  </div>
+  
+<!-- ------------------------- -->
 
     <script src="app.js"></script>
+    
 </body>
 </html>

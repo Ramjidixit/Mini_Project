@@ -32,8 +32,7 @@ function switchTab(newTab) {
             //main pehle search wale tab pr tha, ab your weather tab visible karna h 
             searchForm.classList.remove("active");
             userInfoContainer.classList.remove("active");
-            //ab main your weather tab me aagya hu, toh weather bhi display karna poadega, so let's check local storage first
-            //for coordinates, if we haved saved them there.
+            
             getfromSessionStorage();
         }
     }
@@ -170,3 +169,30 @@ async function fetchSearchWeatherInfo(city) {
         //hW
     }
 }
+//pop
+
+document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.getElementById('popup');
+    const popupContent = document.querySelector('.popup-content');
+  
+    // Function to display the popup
+function openPopup() {
+      popup.style.display = 'block';
+    }
+  
+    // Function to close the popup
+function closePopup() {
+      popup.style.display = 'none';
+    }
+  
+    // Show popup when the page loads
+    openPopup();
+  
+    // Close the popup when clicking outside of it
+    popupContent.addEventListener('click', function (e) {
+      e.stopPropagation(); // Prevents the click event from reaching the window
+    });
+  
+    window.addEventListener('click', closePopup); // Close when clicking outside the image
+  });
+  
